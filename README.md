@@ -15,5 +15,5 @@ that the voter is a valid voter. Upon verification, Election commission returns 
 voting page. There, a list of candidates will be shown based on constituency. During this process, trusted third party generates a public key for the voter using 
 the multi-chain network and stores this information against the hash of the secret message and reference number of the voter and if after that the voter tries 
 more than one transaction/votes, those will be invalidated by multi-chain.
-So,by this whole process we will be able to make sure that the person living in a different location is able to e-vote only once for his consistency and in a most secure way to get his vote
-count and make his opinion make a change with the uses of multi-chain and TTP.
+   So,by this whole process we will be able to make sure that the person living in a different location is able to e-vote only once for his consistency and in a most secure way to 
+get his vote count and make his opinion make a change with the uses of multi-chain and TTP.

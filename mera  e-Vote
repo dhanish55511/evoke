@@ -1,0 +1,18 @@
+We will be using the idea "I live in a different location" to implement our Azure BlockChain application.
+
+The ideal conditions as it happens with the paper ballot voting, that the information about whom the voter voted is to be kept secret and the information 
+should not be known to even the Election Commission and it should not be tampered at any stage of the process are the most important issuse to be addressed
+during making of our application.Also,we'll make efforts to ensure the anonymity of the voter that to maintain voting data confidentiality,by using Trusted Third Party (TTP)
+TTP acts as an agent between the voter and the Election Commission to authenticate the voter to vote during elections.
+Once TTP allows the voters to vote, the voter can choose whom he wants to vote for within his constituency. Each vote is conceptually equivalent to the asset in multi-chain
+and the transaction happens between voter and candidate nominated.By restricting the multi-chain asset to a process maximum of one transaction between parties,
+the system will itself be capable of restricting either multiple votes sent to the same candidate or voting for multiple nominees.
+Election commission maintains data related to voters and contestants. The voter can be identified with any of the unique identification numbers assigned by the Election Commission.
+This identification number must be used consistently throughout the process. Otherwise, there could be chances that the same voter can register multiple times with different 
+identities and then vote multiple times. In the registration process, the voter submits a secret message. During voting, the voter has to submit the same secret message and 
+reference number that has been generated during voter registration to the trusted third party. Trusted third party sends the message hash to the election commission to verify
+that the voter is a valid voter. Upon verification, Election commission returns validity of the voter to trusted third party. A voter identified as valid will be taken to the
+voting page. There, a list of candidates will be shown based on constituency. During this process, trusted third party generates a public key for the voter using 
+the multi-chain network and stores this information against the hash of the secret message and reference number of the voter and if after that the voter tries 
+more than one transaction/votes, those will be invalidated by multi-chain.
+So,by this whole process we will be able to make sure that the person living in a different location is able to vote only once for his consistency.
